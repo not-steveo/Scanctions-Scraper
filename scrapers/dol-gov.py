@@ -1,4 +1,5 @@
-# scrape the table on this page: https://www.dol.gov/agencies/ilab/reports/child-labor/list-of-goods-print
+# scrape the table on this page: https://www.dol.gov/agencies/ilab/reports/child-labor/list-of-goods
+# print URL - https://www.dol.gov/agencies/ilab/reports/child-labor/list-of-goods-print
 # output to CSV
 
 import os
