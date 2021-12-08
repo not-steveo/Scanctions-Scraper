@@ -1,4 +1,4 @@
-#Sanctions-Scraper
+# Sanctions-Scraper
 
 This project scrapes data from the following links:
 * https://www.dol.gov/agencies/ilab/reports/child-labor/list-of-goods
