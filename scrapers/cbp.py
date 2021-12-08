@@ -60,8 +60,6 @@ def main():
             # countryName = summaryParts[-1]
             countryName = countryNames[i]  # summaries inconsistent, better to pull name from headers
 
-            print(type, '-', countryName)
-
             # now we pull data from the rows of the table
             # skip the first two rows as they're just headers
             rows = table.find_all('tr')
@@ -109,7 +107,7 @@ def main():
 
         # point our path to the results folder, and remove the file if one has
         #  already been created with the same name
-        filePath = os.path.join('..', 'results', fileName)
+        filePath = os.path.join('results', fileName)
         if os.path.exists(filePath):
             os.remove(filePath)
 
@@ -121,7 +119,7 @@ def main():
         df = df.sort_values(by=['Type', 'Country', '#'])
         # output to CSV
         df.to_csv(filePath, index=False)
-        print('{} created\n'.format(fileName))
+        print('results/{} created'.format(fileName))
 
 
 if __name__ == "__main__":

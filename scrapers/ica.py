@@ -86,7 +86,7 @@ def main():
 
         # point our path to the results folder, and remove the file if one has
         #  already been created with the same name
-        filePath = os.path.join('..', 'results', fileName)
+        filePath = os.path.join('results', fileName)
         if os.path.exists(filePath):
             os.remove(filePath)
 
@@ -98,7 +98,7 @@ def main():
         df = df.sort_values(by=['Country', 'Company'])
         # output to CSV
         df.to_csv(filePath, index=False)
-        print('{} created\n'.format(fileName))
+        print('results/{} created'.format(fileName))
 
 
 if __name__ == "__main__":
